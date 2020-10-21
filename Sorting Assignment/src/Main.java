@@ -61,7 +61,7 @@ public class Main {
 
         int[] arrA = {5, 78, 56, 32, 15, 23, 56, 11};
         int[] arrB = mergeSort(arrA);
-        for (int b : mergeSort(arrB)) {
+        for (int b : arrB) {
 
             System.out.println(b);
 
