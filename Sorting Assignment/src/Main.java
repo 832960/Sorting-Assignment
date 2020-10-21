@@ -12,25 +12,22 @@ public class Main {
         int[] arrC = new int[arrA.length + arrB.length];
         int a = 0;
         int b = 0;
-        int c = 0;
 
         for (int i = 0; i < arrC.length; i++) {
 
             if (arrA[a] > arrB[b]) {
 
-                arrC[c] = arrA[a];
+                arrC[i] = arrA[a];
                 arrA[a] = 0;
                 a = increase(arrA, a);
-                c = increase(arrC, c);
 
             }
 
             else if (arrB[b] >= arrA[a]) {
 
-                arrC[c] = arrB[b];
+                arrC[i] = arrB[b];
                 arrB[b] = 0;
                 b = increase(arrB, b);
-                c = increase(arrC, c);
 
             }
 
